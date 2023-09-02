@@ -29,7 +29,7 @@ app.use('/api/v1/inventory/', inventoryRouter);
 
 const sendPostRequest = async () => {
     try {
-        const response = await axios.patch('http://localhost:8000/api/v1/inventory/blockExpiredStock');
+        const response = await axios.patch('https://ytproj4be.onrender.com/api/v1/inventory/blockExpiredStock');
         console.log('POST request successful:', response.data);
     } catch (error) {
         console.error('Error sending POST request:', error.message);
